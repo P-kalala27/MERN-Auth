@@ -1,0 +1,16 @@
+name: ci pipeline
+
+on:
+    push:
+        branches:
+            - main
+
+
+jobs: 
+    building_and_testing:
+        runs-on: ubuntu-20.04
+
+    
+        steps:
+            - name: checking for the code base
+              uses: actions/checkout@v4
